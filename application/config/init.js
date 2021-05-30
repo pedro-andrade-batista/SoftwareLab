@@ -3,6 +3,7 @@ const consign = require('consign');
 
 const server = express();
 
+server.use(express.static('public'));
 server.set('view engine', 'ejs');
 server.set('views', 'application/views');
 

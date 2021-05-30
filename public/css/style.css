@@ -1,0 +1,225 @@
+.fontColor{
+  color: #2ecc71;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #636C7D;  /*#34495e*/
+}
+.box{
+  border-radius: 24px;
+  width: 400px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #12181b ; /*#191919*/
+  text-align: center;
+}
+
+button{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  /*transition: 0.25s;*/
+  cursor: pointer;
+}
+
+span:hover, button:hover{
+  background: #2ecc71;
+}
+
+.fontColor2{
+  color: white;
+}
+
+.box2{
+  border-radius: 24px;
+  width: 1100px;
+  padding: 50px;
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #12181b ; 
+  text-align: center;
+}
+
+table{
+  border-radius: 24px;
+}
+
+tfoot{
+  position:relative;
+  display: flex;
+  
+}
+
+footer a{
+  position:absolute;
+  bottom:0;
+  right:0;
+  font-size: 40px;
+  color: #2ecc71;
+}
+
+.box3 a{
+  width: 100%;
+  position:absolute;
+  bottom:0;
+  right:0;
+  text-decoration: none;
+  color: #2ecc71;
+}
+
+
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #636C7D;
+  background-image: none;
+  font-size: 15px;
+  border-radius: 24px;
+  text-align-last: center;
+  text-align: center;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: block;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #636C7D;
+  overflow: hidden;
+  border-radius: .25em;
+}
+select {
+  width: 55%;
+  height: 25px;
+  margin: 10px;
+  padding: 10 0 0 .5em;
+  color: #fff;
+  cursor: pointer;
+}
+select::-ms-expand {
+  display: none;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1em;
+  background: #636C7D;
+  pointer-events: none;
+}
+/* Transition */
+.select::after {
+  -webkit-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+select option {
+  text-align-last: center;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.box h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box h3{
+  color: white;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+.box input[type = "text"],.box input[type = "password"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #aab5c9; /* #3498db*/
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  /*transition: 0.25s;*/
+}
+/*
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
+}
+*/
+.box input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  /*transition: 0.25s;*/
+  cursor: pointer;
+}
+span:hover, .box input[type = "submit"]:hover{
+  background: #2ecc71;
+}
+
+span {
+  border:0;
+  background: none;
+  text-align: center;
+  margin: 5px;
+  border: 2px solid #2ecc71;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 24px;
+}
+
+/*
+#2a2e35 background
+
+#aab5c9 letras
+
+#12181b caixa login
+*/

@@ -3,25 +3,26 @@
     <head>
       <meta charset="utf-8"/>
       <title>Editar vacinado</title>
+      <link rel="stylesheet" href="/css/style.css">
     </head>
   <body>
-    <form action="/attVaccinated" method="POST">
+    <form class="box" action="/attVaccinated" method="POST">
         <div class="form-group">
-          <label for="fullname">Nome completo</label>
+          <label class="fontColor2" for="fullname">Nome completo</label>
           <input type="text" name = "fullname" class="form-control" id="fullname" placeholder="Type the fullname" value=<%= vaccinated.fullname %>>
         </div>
         <div class="form-group">
-          <label for="birthdate">Data de nascimento</label>
-          <input type="birthdate" name="birthdate" class="form-control" id="birthdate" placeholder="Type the birthdate" value=<%= vaccinated.birthdate %>>
+          <label class="fontColor2" for="birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" class="form-control" id="birthdate" placeholder="Type the birthdate" value=<%= vaccinated.birthdate %>>
         </div>
         <div class="form-group">
-          <label for="suscard">Cartão do sus</label>
-          <input type="suscard" name="suscard" class="form-control" id="suscard" placeholder="type the suscard" value=<%= vaccinated.suscard %>>
+          <label class="fontColor2" for="suscard">Cartão do sus</label>
+          <input type="text" name="suscard" class="form-control" id="suscard" placeholder="type the suscard" value=<%= vaccinated.suscard %>>
         </div>
         <input type="hidden" name="id" id="id" value= <%= vaccinated.id %> >
 
         <div class="form-group">
-          <label for="second_vaccine">Segunda Vacina</label>
+          <label class="fontColor2" for="second_vaccine">Segunda Vacina</label><br/>
           <% if(vaccine.length > 0) { %>
             <select name='second_vaccine' id='second_vaccine'>
               <% for(var i = 0; i < vaccine.length; i++) { %>
@@ -33,4 +34,7 @@
         <button type="submit" class="btn btn-primary">Atualizar</button>
     </form>
   </body>
+  <footer>
+    <a href='/'>Retornar para o menu principal</a>
+  </footer>
 </html>

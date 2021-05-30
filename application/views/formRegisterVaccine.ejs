@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+      <meta charset="utf-8"/>
+      <link rel="stylesheet" href="/css/style.css">
+      <title>Cadastrar novo vacinado</title>
+    </head>
+  <body>
+    <form class="box" action="form/registerVaccine" method="POST">
+        <div class="form-group">
+          <label class="fontColor2" for="date_vaccine">Data da vacina</label>
+          <input type="text" name="date_vaccine" class="form-control" id="date_vaccine" placeholder="Type the vaccine date">
+        </div>
+        <div class="form-group">
+          <label class="fontColor2" for="num_lote">Número do lote</label>
+          <input type="text" name="num_lote" class="form-control" id="num_lote" placeholder="Type the lote number">
+        </div>
+        <div class="form-group">
+            <label class="fontColor2" for="laboratory">Laboratório</label>
+            <input type="text" name="laboratory" class="form-control" id="laboratory" placeholder="Type the laboratory">
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="box3">
+          <a href='/'>Retornar para o menu principal</a>
+        </div>
+    </form>
+  </body>
+</html>

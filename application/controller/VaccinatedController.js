@@ -62,7 +62,6 @@ module.exports.saveVaccinated = (server, req, res) => {
     let connection = server.application.config.dbConnection();
     let vaccinatedDAO = new server.application.DAO.VaccinatedDAO(connection);
     vaccinated.first_vaccine = parseInt(vaccinated.first_vaccine);
-    // console.log(typeof(vaccinated.first_vaccine));
     vaccinatedDAO.saveNewVaccinated(vaccinated, (error, sucess) => {
         if(error){
             res.send(error);
